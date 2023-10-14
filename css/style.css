@@ -1,0 +1,11 @@
+.card{
+  transition: all .5s linear;
+}
+
+.card:hover {
+  transform:  translateY(-10px);
+}
+
+textarea{
+  resize: none;
+}

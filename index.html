@@ -10,7 +10,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/">
+    <link rel="stylesheet" href="./css/style.css"/>
     <title>Bootstrap Project</title>
   </head>
   <body>
@@ -82,7 +83,7 @@
             <img
               src="https://picsum.photos/id/233/600/400"
               alt=""
-              class="img-fluid"
+              class="img-fluid rounded"
             />
           </div>
           <div class="col-md-5">
@@ -111,11 +112,11 @@
         <div class="row">
           <div class="col">
             <div class="card-group">
-              <div class="card">
+              <div class="card mx-1 rounded-top">
                 <img
                   src="https://picsum.photos/id/200/320/200"
                   class="card-img-top"
-                  alt="..."
+                  alt="cow at the mountain"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -133,11 +134,11 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card mx-1 rounded-top">
                 <img
                   src="https://picsum.photos/id/201/320/200"
-                  class="card-img-top"
-                  alt="..."
+                  class="card-img-top rounded-top"
+                  alt="tech device on the table"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -146,21 +147,21 @@
                     additional content.
                   </p>
                   <div class="">
-                    <a href="#"
-                      ><button type="button" class="btn btn-primary">
-                        Read more
-                      </button></a
-                    >
+                  <a href="#"
+                    ><button type="button" class="btn btn-primary">
+                      Read more
+                    </button></a
+                  >
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card mx-1 rounded-top">
                 <img
                   src="https://picsum.photos/id/202/320/200"
-                  class="card-img-top"
-                  alt="..."
+                  class="card-img-top rounded-top"
+                  alt="a road between the trees"
                 />
-                <div class="card-body">
+                <div class="card-body rounded-1">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
@@ -180,7 +181,7 @@
           </div>
         </div>
         <!-- form -->
-        <div class="container">
+        <div class="container my-5">
           <div class="text-center">
             <h2>Get in touch</h2>
             <p class="lead">Questions? Do not hesitate to contact us.</p>
@@ -189,12 +190,45 @@
             <div class="col-lg-6">
               <form action="">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" placeholder="my@email.com" id="email" class="form-control">
+                <input
+                  type="email"
+                  placeholder="my@email.com"
+                  id="email"
+                  class="form-control my-2"
+                  required
+                />
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" placeholder="e.g. Joe" id="name" class="form-control">
+                <input
+                  type="text"
+                  placeholder="e.g. Joe"
+                  id="name"
+                  class="form-control my-2"
+                  required
+                />
                 <label for="subject" class="form-label">Subject</label>
-                <select name="subject" id="subject" class=""></select>
+                <select name="subject" id="subject" class="form-select my-2" required>
+                  <option value="">Choose here...</option>
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="JavaScript">JavaScript</option>
+                </select>
+
+                <label for="query">Write a message</label>
+                <textarea
+                  name="query"
+                  id="query"
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                  placeholder="Write something"
+                  required
+                ></textarea>
+
+                <div class="text-center">
+                  <button class="btn btn-primary my-3" type="submit">Send!</button>
+                </div>
               </form>
+              <!-- end of form -->
             </div>
           </div>
         </div>
@@ -205,7 +239,7 @@
     <footer class="footer mt-auto py-3 bg-dark text-center">
       <div class="container">
         <span class="text-muted"
-          >Copyrights <a href="https://sundsgarden.se/">Sundsgården.se</a></span
+          >Copyright <a href="https://sundsgarden.se/">Sundsgården.se</a></span
         >
       </div>
     </footer>
